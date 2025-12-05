@@ -1,0 +1,29 @@
+# --- Python Basics ---
+__pycache__/
+*.py[cod]
+*.so
+
+# --- Environments ---
+.env
+.venv
+env/
+venv/
+ENV/
+
+# --- BIG DATA (CRITICAL TO IGNORE) ---
+dataset Celeb/
+dataset anime/
+dataset/
+*.zip
+*.rar
+
+# --- Large AI Models (GitHub limit is 100MB) ---
+# We ignore the generated checkpoints to save space
+*.pth
+*.pt
+*.pkl
+
+# --- Video Outputs ---
+# Optional: Keep the final video, ignore the frames
+temp_frames_in/
+temp_frames_out/
