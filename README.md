@@ -9,7 +9,7 @@ https://github.com/EvansDesikan/GenAI_Face_Morphing/raw/main/face_morphing_60fps
 | Step | Script | What it does |
 | --- | --- | --- |
 | 1. Train | `train_gan.py` | DCGAN (generator + discriminator, PyTorch), 64 x 64 images, latent size 100, 25 epochs, batch 128, Adam (lr 0.0002, beta1 0.5) |
-| 2. Generate | `generate_video.py` | Interpolates between random latent vectors; 15 s at 30 fps, upscaled to 720 x 720 |
+| 2. Generate | `generate_video.py` | Spherical interpolation (slerp) between random latent keyframes every 2 s; 15 s at 30 fps, upscaled to 720 x 720 |
 | 3. Restore | `upscale_video.py` | Cleans each face with GFPGAN v1.3 |
 | 4. Smooth | `smooth_video_exe.py` | Doubles the frame rate to 60 fps with RIFE v4.6 frame interpolation |
 
