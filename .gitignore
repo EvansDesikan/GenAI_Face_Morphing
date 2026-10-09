@@ -27,3 +27,7 @@ dataset/
 # Optional: Keep the final video, ignore the frames
 temp_frames_in/
 temp_frames_out/
+# Third-party RIFE binaries and models (download separately, see README)
+rife*/
+rife-ncnn-vulkan*
+*.dll
